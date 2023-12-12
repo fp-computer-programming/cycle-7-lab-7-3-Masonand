@@ -1,0 +1,24 @@
+# Author: Mason Andrews
+
+def greeting():
+    """
+    This function prints "Hello World" on one line.
+    """
+    print("Hello World!")
+    return greeting.__doc__
+
+greeting_result = greeting()
+print("Returned Docstring:", greeting_result)
+
+
+test_case1_result = greeting()
+print("Test Case 1 Result:", test_case1_result)
+
+test_case2_result = greeting()
+print("Test Case 2 Result:", test_case2_result)
+
+test_case3_result = greeting()
+print("Test Case 3 Result:", "Docstring is not empty" if test_case3_result else "Docstring is empty")
+
+test_case4_result = greeting()
+print("Test Case 4 Result:", "Hello" in test_case4_result)
